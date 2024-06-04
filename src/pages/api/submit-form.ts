@@ -10,14 +10,14 @@ export default async function handler(req: any, res: any) {
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "onecloudmediauk1@gmail.com",
-        pass: "hipgagizxngbjkuf",
+        user: "",
+        pass: "",
       },
     });
 
     const mailOptions = {
-      from: "onecloudmediauk1@gmail.com",
-      to: "onecloudmediauk1@gmail.com",
+      from: "",
+      to: "",
       subject: "Form Submission",
       text: `First Name: ${firstName}\nSecond Name: ${secondName}\nEmail Address: ${email}\nNumber: ${number}\nJob: ${jobTitle}\nCreator Status: ${creatorStatus}`,
     };
